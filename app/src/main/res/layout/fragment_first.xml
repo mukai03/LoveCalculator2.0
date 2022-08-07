@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:gravity="center"
+    tools:context=".FirstFragment">
+
+    <EditText
+        android:id="@+id/firstNameEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First name: "
+        />
+
+    <EditText
+        android:id="@+id/secondNameEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second name: "
+        />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
