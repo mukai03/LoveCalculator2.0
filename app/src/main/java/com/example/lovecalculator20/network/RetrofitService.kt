@@ -10,5 +10,5 @@ class RetrofitService {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-    val api = retrofit.create(LoveApi::class.java)
+    val api: LoveApi = retrofit.create(LoveApi::class.java)
 }

@@ -31,15 +31,14 @@ class SecondFragment : Fragment() {
     }
 
     private fun onClick() {
-        val firstName = arguments?.getString("fname")
-        val secondName = arguments?.getString("sname")
-        val percentage = arguments?.getString("percentage")
-        val result = arguments?.getString("result")
+        val loveModel:LoveModel = arguments?.getSerializable("loveModel") as LoveModel
+        with(binding){
+            tvFirstName.text = loveModel.firstName
+            tvSecondName.text = loveModel.secondName
+            tvResult.text = loveModel.result
+            tvPercent.text = loveModel.percentage
 
-        binding.tvFirstName.text = firstName
-        binding.tvSecondName.text = secondName
-        binding.tvPercent.text = percentage
-        binding.tvResult.text = result
+        }
     }
 
     private fun listener() {

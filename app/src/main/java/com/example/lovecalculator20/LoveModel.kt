@@ -1,13 +1,14 @@
 package com.example.lovecalculator20
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
-data class LoveModel (
+data class LoveModel(
 
     @SerializedName("fname")
     val firstName: String,
     @SerializedName("sname")
     val secondName: String,
     val percentage: String,
-    val result: String,
-        )
+    val result: String
+): Serializable
