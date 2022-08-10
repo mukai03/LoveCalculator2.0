@@ -12,7 +12,7 @@ interface LoveApi {
     fun calculate(
         @Query("sname")secondName: String,
         @Query("fname")firstName: String,
-        @Header("X-RapidAPI-Key")key: String = "5117cefdb8msh6239bbc071e85f2p1135a7jsn0eadd39e2649",
+        @Header("X-RapidAPI-Key")key: String = "b9ef5a1a02msh42adbd4d966d549p19e9f2jsn633d95607983",
         @Header("X-RapidAPI-Host")host: String = "love-calculator.p.rapidapi.com"
     ):Call<LoveModel>
 }
